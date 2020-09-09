@@ -17,8 +17,8 @@ class Header extends React.Component {
         console.log("Renderlandım")
         return (
             <header>
-                <nav className="container navbar navbar-expand-lg navbar-light justify-content-between">
-                    <a className="navbar-brand" href="#">React</a>
+                <nav className="container navbar navbar-expand-lg d-flex justify-content-between">
+                    <a className="navbar-brand" href="#">REACTPROJECT</a>
                     <button className="navbar-toggler" type="button" onClick={this.buttonClicked.bind(this)}>
                         <span className="navbar-toggler-icon"></span>
                     </button>

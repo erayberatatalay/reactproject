@@ -1,0 +1,66 @@
+@import 'base.sass'
+@import '~bootstrap/scss/bootstrap.scss'
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext')
+
+$primary-color: #86bc42
+$text-color: #49575F
+$font-family: 'Lato', sans-serif
+html 
+  box-sizing : border-box
+
+html,
+body 
+  margin: 0
+  padding: 0
+  height: 100%
+
+*,
+*:before,
+*:after 
+  box-sizing: inherit
+
+header  
+  background-color: #fff
+  box-shadow: 3px 0 8px rgba(0,0,0,0.3)
+  position: fixed
+  width: 100%
+  .navbar-brand 
+    color: $primary-color !important
+    font-family: $font-family
+
+  .nav-link
+    color: $text-color
+    font-family: $font-family
+    text-transform: uppercase
+
+    &:hover
+      color: $primary-color
+      font-weight: bold
+  .active
+    color: $primary-color
+
+  .navbar-collapse
+    flex-basis: 100%
+
+    @media (max-width:992px)
+      flex-basis: auto
+
+  .navbar-toggler
+    border-width: 0px
+    .navbar-toggler-icon
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+
+  .home-container
+    background-image: url('./images/home.jpg')
+    height: 600px
+    background-repeat: no-repeat
+    object-fit: cover
+    background-size: cover
+    padding-top: 60px
+  h1
+    text-align: center
+    color: $text-color
+    font-family: $font-family
+    text-transform: uppercase
+    font-weight: bold
+    margin-top: 160px
